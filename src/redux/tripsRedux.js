@@ -21,7 +21,7 @@ export const getFilteredTrips = ({trips, filters}) => {
 };
 
 export const getTripById = ({trips}, tripId) => {
-  const filtered = trips.filter(trip => trip.id==tripId);
+  const filtered = trips.filter(trip => trip.id == tripId);
 
   // CHECK/DONE - filter trips by tripId
 
@@ -30,7 +30,7 @@ export const getTripById = ({trips}, tripId) => {
 };
 
 export const getTripsForCountry = ({trips}, countryCode) => {
-  const filtered = trips.filter(trip => trip.country.code ==countryCode);
+  const filtered = trips.filter(trip => trip.country.code == countryCode);
 
   // CHECK/DONE - filter trips by countryCode
 
