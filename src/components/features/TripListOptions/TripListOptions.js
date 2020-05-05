@@ -8,19 +8,19 @@ class TripListOptions extends React.Component {
   handleTags(tag, checked){
     if(checked) {
       console.log('Adding tag', tag);
-      // TODO - use action dispatcher from props
+      // CHECK/DONE ? - use action dispatcher from props
       this.props.addTripTag({tag});
     } else {
       console.log('Removing tag', tag);
-      // TODO - use action dispatcher from props
+      // CHECK/DONE ? - use action dispatcher from props
       this.props.removeTripTag({tag});
     }
   }
 
   handleDuration(type, value){
     console.log('Changing duration', type, value);
-    // TODO - use action dispatcher from props
-    this.props.changeTripDuration({type});
+    // CHECK/DONE ? - use action dispatcher from props
+    this.props.changeTripDuration({type, value});
   }
 
   handleSearch(phrase){
@@ -78,7 +78,7 @@ TripListOptions.propTypes = {
   changeSearchPhrase: PropTypes.func,
   changeTripDuration: PropTypes.func,
   addTripTag: PropTypes.func,
-  removeTripTag: PropTypes.func,
+  removeTripTag: PropTypes.func,      // <---- almost forgot about adding/define props ->> this resulted in the TripListOptionsContainer not working properly -> remember for the future (familiar) tasks : )
 };
 
 export default TripListOptions;
