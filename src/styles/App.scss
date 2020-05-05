@@ -1,12 +1,24 @@
 
+
+
 .switchWrapper {
-    position: relative;
-  
-    > :first-child ~ * {
-      position: absolute;
+  position: relative;
+
+  > :first-child ~ * {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    animation: entrance 1s;
+  }
+
+  @keyframes entrance {
+    0% {
+      top: 200px;
+    }
+    100% {
       top: 0;
-      left: 0;
-      width: 100%;
     }
   }
+
+}
 
