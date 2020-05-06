@@ -30,7 +30,29 @@ export default function reducer(statePart = [], action = {}) {
         ...statePart,
         searchPhrase: action.payload,
       };
-    // TODO - handle other action types <-------------- ??? check later
+      // TODO - handle other action types <-------------- ??? check later
+    case CHANGE_DURATION:
+      return {
+        ...statePart,
+        duration: {
+          [action.payload.type]: action.payload.value,
+        },
+      };
+    case ADD_TAG:
+      return {
+        ...statePart,
+        tags: [
+          ...statePart.tags,
+          action.payload.tag],   
+      };
+    case REMOVE_TAG:
+      return {
+        ...statePart,
+        tags:[
+          ...statePart.tags.filter(tag => tag != action.payload.tag),
+        ],
+      };
+
     default:
       return statePart;
   }
