@@ -11,13 +11,12 @@ export const getFilteredTrips = ({trips, filters}) => {
     output = output.filter(trip => pattern.test(trip.name));
   }
 
-  // TODO - filter by duration
-  //   if(filters.duration){
-  //     const pattern = new RegExp(filters.duration, 'i');
-  //     output = output.filter(trip => pattern.test(trip.duration));
-  //   }                                                                           <---- work on it
+  // CHECK/DONE? - filter by duration
+  if (filters.duration) {
+    output = output.filter(trip => trip.days >= filters.duration.from && trip.days <= filters.duration.to);
+  }
 
-  // TODO - filter by tags
+  // CHECK/DONE? - filter by tags
   if(filters.tags){
     const pattern = new RegExp(filters.tags, 'i');
     output = output.filter(trip => pattern.test(trip.tags));
