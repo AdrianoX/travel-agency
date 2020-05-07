@@ -30,7 +30,7 @@ export default function reducer(statePart = [], action = {}) {
         ...statePart,
         searchPhrase: action.payload,
       };
-      // TODO - handle other action types <-------------- ??? check later
+      // CHECK/DONE - handle other action types 
     case CHANGE_DURATION:
       return {
         ...statePart,

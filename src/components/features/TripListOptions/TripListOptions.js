@@ -78,7 +78,7 @@ TripListOptions.propTypes = {
   changeSearchPhrase: PropTypes.func,
   changeTripDuration: PropTypes.func,
   addTripTag: PropTypes.func,
-  removeTripTag: PropTypes.func,      // <---- almost forgot about adding/define props ->> this resulted in the TripListOptionsContainer not working properly -> remember for the future (familiar) tasks : )
+  removeTripTag: PropTypes.func,      
 };
 
 export default TripListOptions;
