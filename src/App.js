@@ -46,7 +46,7 @@ class App extends React.Component {
             atEnter={{ opacity: 0 }}
             atLeave={{ opacity: 0 }}
             atActive={{ opacity: 1 }}
-            className={styles.switchWrapper} // <--- from "to-do exercise, now change for requiements of the current task"
+            className={styles.switchWrapper} 
           >
             <Route exact path='/' component={Home} />
             <Route exact path='/trips' component={Trips} />
