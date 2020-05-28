@@ -4,16 +4,23 @@ import styles from './OrderOption.scss';
 import {formatPrice} from '../../../utils/formatPrice';
 import Icon from '../../common/Icon/Icon';
 
-const OrderOptionIcons = ({values, required, setOptionValue}) => (
+const OrderOptionIcons = ({values, required, setOptionValue, currentValue}) => (
   <div
     className={styles.icon}
   >
     {required ? '' : (
-      <div key='null' value='' className={styles.icon}>---</div>
+      <div
+        className={styles.icon}
+        value={currentValue}
+        onChange={() => setOptionValue('')}
+      >
+        <Icon name={'times-circle'} />
+        none
+      </div>
     )}
     {values.map(value => (
       <div 
-        className={styles.icon}
+        className={currentValue === value.id ? styles.iconActive : styles.icon}
         key={value.id} 
         value={value.id}
         onClick= {() => (setOptionValue(value.id))}
@@ -26,13 +33,11 @@ const OrderOptionIcons = ({values, required, setOptionValue}) => (
 );
 
 
-
-
 OrderOptionIcons.propTypes = {
   //   name: PropTypes.string,
   values: PropTypes.array,
   required: PropTypes.bool,
-  //   currentValue: PropTypes.string,
+  currentValue: PropTypes.string,
   setOptionValue: PropTypes.func,
 };
 
