@@ -9,7 +9,7 @@ describe('Component TripSummary', () => {
     const expectedId = 'abc';
     const component = shallow(<TripSummary id={expectedId} tags={[]}/>);
     expect(component.find('.link').prop('to')).toEqual(expectedLink);
-    console.log(component.debug());
+    // console.log(component.debug());
   });
 
   it('should generate correct src and alt for <img>', () => {
@@ -18,7 +18,7 @@ describe('Component TripSummary', () => {
     const component = shallow(<TripSummary image={expectedSrc} name={expectedAlt} tags={[]}/>);
     expect(component.find('img').prop('src')).toEqual(expectedSrc);
     expect(component.find('img').prop('alt')).toEqual(expectedAlt);
-    console.log(component.debug());
+    // console.log(component.debug());
   });
 
   it('should render correct props: name, cost, days', () => {
@@ -27,7 +27,7 @@ describe('Component TripSummary', () => {
     const expectedDays= '7';
     const component = shallow(<TripSummary name={expectedName} cost={expectedCost} days={expectedDays} tags={[]}/>);
     expect(component).toBeTruthy();
-    console.log(component.debug());
+    // console.log(component.debug());
   });
 
   it ('should throw error without required props', () =>{
@@ -43,8 +43,13 @@ describe('Component TripSummary', () => {
 
   });
 
-  it('should render tags when props is false', () => {
-    // ?????
+  it('shouldnt render tags if tags array is empty or not given', () => {
+    const expectedTags = [];
+    const component = shallow(<TripSummary tags={expectedTags} />);
+    
+    expect(component.find('.tags')).toEqual({});
+    console.log(component.debug());
   });
 
 });
+
