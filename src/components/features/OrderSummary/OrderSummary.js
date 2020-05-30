@@ -15,7 +15,7 @@ const OrderSummary = props => (
     <Row>
       <Col xs={12}>
         <h2 className={styles.component}> Total: $
-          <strong>{calculateTotal(formatPrice(props.tripCost), props.tripOptions)}</strong>
+          <strong>{calculateTotal(formatPrice(props.tripCost), props.tripOptions).toFixed(2)}</strong>
         </h2>
       </Col>
     </Row>

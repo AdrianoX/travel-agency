@@ -34,4 +34,17 @@ describe('Component TripSummary', () => {
     expect(() => shallow(<TripSummary />).toEqual()); //.toThrow ?
   });
 
+  it ('should render tags correctly', () => {
+    const expectedTagArray = ['tag1', 'tag2', 'tag3'];
+    const component = shallow(<TripSummary tags={expectedTagArray} />);
+    expect(component.find('.tag').at(0)).toEqual[expectedTagArray[0]]; // .find  => finds all elements)  then => .at => find specific (single) selector
+    expect(component.find('.tag').at(1)).toEqual[expectedTagArray[1]];
+    expect(component.find('.tag').at(2)).toEqual[expectedTagArray[2]];
+
+  });
+
+  it('should render tags when props is false', () => {
+    // ?????
+  });
+
 });
