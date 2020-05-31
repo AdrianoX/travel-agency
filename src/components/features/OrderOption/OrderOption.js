@@ -14,7 +14,7 @@ const optionTypes = {
   checkboxes: OrderOptionCheckboxes,
   number: OrderOptionNumber,
   text: OrderOptionText,
-  date:OrderOptionDate,
+  date: OrderOptionDate,
 };
 
 

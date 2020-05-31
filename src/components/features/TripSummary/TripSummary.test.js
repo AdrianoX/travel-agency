@@ -43,13 +43,5 @@ describe('Component TripSummary', () => {
 
   });
 
-  it('shouldnt render tags if tags array is empty or not given', () => {
-    const expectedTags = [];
-    const component = shallow(<TripSummary tags={expectedTags} />);
-    
-    expect(component.find('.tags')).toEqual({});
-    console.log(component.debug());
-  });
-
 });
 

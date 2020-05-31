@@ -29,7 +29,43 @@ describe('Component OrderOption', () => {
     const expectedTitle = 'Country';
     const component = shallow(<OrderOption type={'text'} name={expectedTitle}/>);
     expect(component.find('.title').text()).toEqual(expectedTitle);
-    console.log(component.debug());
+    // console.log(component.debug());
   });
 
 });
+
+const optionTypes = {
+  dropdown: 'OrderOptionDropdown',
+  icons: 'OrderOptionIcons',
+  checkboxes: 'OrderOptionCheckboxes',
+  number: 'OrderOptionNumber',
+  text: 'OrderOptionText',
+  date: 'OrderOptionDate',
+};
+  
+for(let type in optionTypes){
+  describe(`Component OrderOption with type=${type}`, () => {
+    /* test setup */
+    let component;
+
+    beforeEach(() => {
+      component = shallow(
+        <OrderOption
+          type={type}
+        />
+      );
+    });
+    /* common tests */
+    it('passes dummy test', () => {
+      expect(1).toBe(1);
+      console.log(component.debug());
+    });
+    /* type-specific tests */
+    switch (type) {
+      case 'dropdown': {
+        /* tests for dropdown */
+        break;
+      }
+    }
+  });
+}
