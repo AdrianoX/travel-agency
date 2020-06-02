@@ -1192,6 +1192,409 @@
         ]
       },
       "id": 34
+    },
+    {
+      "name": "",
+      "contact": "",
+      "start-date": "",
+      "car-rental": "",
+      "accommodation": "hotel",
+      "features": [],
+      "adults": 1,
+      "children": 0,
+      "totalCost": "$9,553",
+      "tripId": "5cc1d101b5c152e861b59e67",
+      "tripName": "Fabulous swing in strange Viet Nam",
+      "tripCountry": {
+        "currencies": [
+          {
+            "code": "VND",
+            "name": "Vietnamese đồng",
+            "symbol": "₫"
+          }
+        ],
+        "languages": [
+          {
+            "iso639_1": "vi",
+            "iso639_2": "vie",
+            "name": "Vietnamese",
+            "nativeName": "Tiếng Việt"
+          }
+        ],
+        "flag": "https://restcountries.eu/data/vnm.svg",
+        "name": "Viet Nam",
+        "alpha2Code": "VN",
+        "alpha3Code": "VNM",
+        "capital": "Hanoi",
+        "region": "Asia",
+        "subregion": "South-Eastern Asia",
+        "population": 92700000,
+        "timezones": [
+          "UTC+07:00"
+        ],
+        "borders": [
+          "KHM",
+          "CHN",
+          "LAO"
+        ],
+        "trips": [
+          "5cc1d101b5c152e861b59e67"
+        ]
+      },
+      "id": 35
+    },
+    {
+      "name": "w",
+      "contact": "",
+      "start-date": "",
+      "car-rental": "",
+      "accommodation": "hotel",
+      "features": [],
+      "adults": 1,
+      "children": 0,
+      "totalCost": "$9,553",
+      "tripId": "5cc1d101b5c152e861b59e67",
+      "tripName": "Fabulous swing in strange Viet Nam",
+      "tripCountry": {
+        "currencies": [
+          {
+            "code": "VND",
+            "name": "Vietnamese đồng",
+            "symbol": "₫"
+          }
+        ],
+        "languages": [
+          {
+            "iso639_1": "vi",
+            "iso639_2": "vie",
+            "name": "Vietnamese",
+            "nativeName": "Tiếng Việt"
+          }
+        ],
+        "flag": "https://restcountries.eu/data/vnm.svg",
+        "name": "Viet Nam",
+        "alpha2Code": "VN",
+        "alpha3Code": "VNM",
+        "capital": "Hanoi",
+        "region": "Asia",
+        "subregion": "South-Eastern Asia",
+        "population": 92700000,
+        "timezones": [
+          "UTC+07:00"
+        ],
+        "borders": [
+          "KHM",
+          "CHN",
+          "LAO"
+        ],
+        "trips": [
+          "5cc1d101b5c152e861b59e67"
+        ]
+      },
+      "id": 36
+    },
+    {
+      "name": "Adrian",
+      "contact": "",
+      "start-date": "2020-06-18T17:26:53.000Z",
+      "car-rental": "full",
+      "accommodation": "suite",
+      "features": [
+        "all-inclusive",
+        "security",
+        "pool"
+      ],
+      "adults": "5",
+      "children": "2",
+      "totalCost": "$223,301",
+      "tripId": "5cc1d1015f3c5f5f14384b15",
+      "tripName": "Wondrous travel in excellent United States of America",
+      "tripCountry": {
+        "currencies": [
+          {
+            "code": "USD",
+            "name": "United States dollar",
+            "symbol": "$"
+          }
+        ],
+        "languages": [
+          {
+            "iso639_1": "en",
+            "iso639_2": "eng",
+            "name": "English",
+            "nativeName": "English"
+          }
+        ],
+        "flag": "https://restcountries.eu/data/usa.svg",
+        "name": "United States of America",
+        "alpha2Code": "US",
+        "alpha3Code": "USA",
+        "capital": "Washington, D.C.",
+        "region": "Americas",
+        "subregion": "Northern America",
+        "population": 323947000,
+        "timezones": [
+          "UTC-12:00",
+          "UTC-11:00",
+          "UTC-10:00",
+          "UTC-09:00",
+          "UTC-08:00",
+          "UTC-07:00",
+          "UTC-06:00",
+          "UTC-05:00",
+          "UTC-04:00",
+          "UTC+10:00",
+          "UTC+12:00"
+        ],
+        "borders": [
+          "CAN",
+          "MEX"
+        ],
+        "trips": [
+          "5cc1d1015f3c5f5f14384b15"
+        ]
+      },
+      "id": 37
+    },
+    {
+      "name": "Adrian",
+      "contact": "000-111-555",
+      "start-date": "2020-06-18T17:26:53.000Z",
+      "car-rental": "full",
+      "accommodation": "suite",
+      "features": [
+        "all-inclusive",
+        "security",
+        "pool"
+      ],
+      "adults": "5",
+      "children": "2",
+      "totalCost": "$223,301",
+      "tripId": "5cc1d1015f3c5f5f14384b15",
+      "tripName": "Wondrous travel in excellent United States of America",
+      "tripCountry": {
+        "currencies": [
+          {
+            "code": "USD",
+            "name": "United States dollar",
+            "symbol": "$"
+          }
+        ],
+        "languages": [
+          {
+            "iso639_1": "en",
+            "iso639_2": "eng",
+            "name": "English",
+            "nativeName": "English"
+          }
+        ],
+        "flag": "https://restcountries.eu/data/usa.svg",
+        "name": "United States of America",
+        "alpha2Code": "US",
+        "alpha3Code": "USA",
+        "capital": "Washington, D.C.",
+        "region": "Americas",
+        "subregion": "Northern America",
+        "population": 323947000,
+        "timezones": [
+          "UTC-12:00",
+          "UTC-11:00",
+          "UTC-10:00",
+          "UTC-09:00",
+          "UTC-08:00",
+          "UTC-07:00",
+          "UTC-06:00",
+          "UTC-05:00",
+          "UTC-04:00",
+          "UTC+10:00",
+          "UTC+12:00"
+        ],
+        "borders": [
+          "CAN",
+          "MEX"
+        ],
+        "trips": [
+          "5cc1d1015f3c5f5f14384b15"
+        ]
+      },
+      "id": 38
+    },
+    {
+      "name": "",
+      "contact": "",
+      "start-date": "",
+      "car-rental": "",
+      "accommodation": "hotel",
+      "features": [],
+      "adults": 1,
+      "children": 0,
+      "totalCost": "$33,417",
+      "tripId": "5cc1d1015f3c5f5f14384b15",
+      "tripName": "Wondrous travel in excellent United States of America",
+      "tripCountry": {
+        "currencies": [
+          {
+            "code": "USD",
+            "name": "United States dollar",
+            "symbol": "$"
+          }
+        ],
+        "languages": [
+          {
+            "iso639_1": "en",
+            "iso639_2": "eng",
+            "name": "English",
+            "nativeName": "English"
+          }
+        ],
+        "flag": "https://restcountries.eu/data/usa.svg",
+        "name": "United States of America",
+        "alpha2Code": "US",
+        "alpha3Code": "USA",
+        "capital": "Washington, D.C.",
+        "region": "Americas",
+        "subregion": "Northern America",
+        "population": 323947000,
+        "timezones": [
+          "UTC-12:00",
+          "UTC-11:00",
+          "UTC-10:00",
+          "UTC-09:00",
+          "UTC-08:00",
+          "UTC-07:00",
+          "UTC-06:00",
+          "UTC-05:00",
+          "UTC-04:00",
+          "UTC+10:00",
+          "UTC+12:00"
+        ],
+        "borders": [
+          "CAN",
+          "MEX"
+        ],
+        "trips": [
+          "5cc1d1015f3c5f5f14384b15"
+        ]
+      },
+      "id": 39
+    },
+    {
+      "name": "Adr",
+      "contact": "",
+      "start-date": "",
+      "car-rental": "",
+      "accommodation": "hotel",
+      "features": [],
+      "adults": 1,
+      "children": 0,
+      "totalCost": "$33,417",
+      "tripId": "5cc1d1015f3c5f5f14384b15",
+      "tripName": "Wondrous travel in excellent United States of America",
+      "tripCountry": {
+        "currencies": [
+          {
+            "code": "USD",
+            "name": "United States dollar",
+            "symbol": "$"
+          }
+        ],
+        "languages": [
+          {
+            "iso639_1": "en",
+            "iso639_2": "eng",
+            "name": "English",
+            "nativeName": "English"
+          }
+        ],
+        "flag": "https://restcountries.eu/data/usa.svg",
+        "name": "United States of America",
+        "alpha2Code": "US",
+        "alpha3Code": "USA",
+        "capital": "Washington, D.C.",
+        "region": "Americas",
+        "subregion": "Northern America",
+        "population": 323947000,
+        "timezones": [
+          "UTC-12:00",
+          "UTC-11:00",
+          "UTC-10:00",
+          "UTC-09:00",
+          "UTC-08:00",
+          "UTC-07:00",
+          "UTC-06:00",
+          "UTC-05:00",
+          "UTC-04:00",
+          "UTC+10:00",
+          "UTC+12:00"
+        ],
+        "borders": [
+          "CAN",
+          "MEX"
+        ],
+        "trips": [
+          "5cc1d1015f3c5f5f14384b15"
+        ]
+      },
+      "id": 40
+    },
+    {
+      "name": "Adr",
+      "contact": "666",
+      "start-date": "",
+      "car-rental": "",
+      "accommodation": "hotel",
+      "features": [],
+      "adults": "2",
+      "children": 0,
+      "totalCost": "$66,834",
+      "tripId": "5cc1d1015f3c5f5f14384b15",
+      "tripName": "Wondrous travel in excellent United States of America",
+      "tripCountry": {
+        "currencies": [
+          {
+            "code": "USD",
+            "name": "United States dollar",
+            "symbol": "$"
+          }
+        ],
+        "languages": [
+          {
+            "iso639_1": "en",
+            "iso639_2": "eng",
+            "name": "English",
+            "nativeName": "English"
+          }
+        ],
+        "flag": "https://restcountries.eu/data/usa.svg",
+        "name": "United States of America",
+        "alpha2Code": "US",
+        "alpha3Code": "USA",
+        "capital": "Washington, D.C.",
+        "region": "Americas",
+        "subregion": "Northern America",
+        "population": 323947000,
+        "timezones": [
+          "UTC-12:00",
+          "UTC-11:00",
+          "UTC-10:00",
+          "UTC-09:00",
+          "UTC-08:00",
+          "UTC-07:00",
+          "UTC-06:00",
+          "UTC-05:00",
+          "UTC-04:00",
+          "UTC+10:00",
+          "UTC+12:00"
+        ],
+        "borders": [
+          "CAN",
+          "MEX"
+        ],
+        "trips": [
+          "5cc1d1015f3c5f5f14384b15"
+        ]
+      },
+      "id": 41
     }
   ]
 }

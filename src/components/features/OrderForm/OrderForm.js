@@ -39,6 +39,15 @@ const sendOrder = (options, tripCost, tripId, tripName, tripCountry) => {
       console.log('parsedResponse', parsedResponse);
     });
 
+    
+  const { name, contact } = options;
+
+  if (name == '') {
+    window.alert('Complete the "Your name" field !');
+  }
+  else if(contact == '') {
+    window.alert('Complete the "Contact info" field !');
+  }
 };
 
 const OrderForm = ({ tripCost, options, setOrderOption, tripId, tripName, tripCountry}) => (
@@ -64,7 +73,7 @@ OrderForm.propTypes = {
   setOrderOption: PropTypes.func,
   tripId: PropTypes.string,
   tripName: PropTypes.string,
-  tripCountry: PropTypes.string,
+  tripCountry: PropTypes.object,
 //   formatPrice: PropTypes.func,
 //   calculateTotal: PropTypes.func,
 };
