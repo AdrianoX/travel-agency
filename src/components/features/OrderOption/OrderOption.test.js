@@ -208,9 +208,9 @@ for(let type in optionTypes){
         });
 
         it('contains div with class/input type checkbox', () => {
-          renderedSubcomponent.find('input').at(2).simulate('change', {checked: true});
+          renderedSubcomponent.find('input').at(1).simulate('change', {currentTarget: {checked: true}});
           expect(mockSetOrderOption).toBeCalledTimes(1);
-          expect(mockSetOrderOption).toBeCalledWith({[mockProps.id]: [mockProps.currentValue]});
+          expect(mockSetOrderOption).toBeCalledWith({[mockProps.id]: [mockProps.currentValue], testValue});
 
         });
         break;
