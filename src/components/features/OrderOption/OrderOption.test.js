@@ -140,7 +140,7 @@ for(let type in optionTypes){
         });
 
         it('should test our function on click', () => {
-          renderedSubcomponent.find('.icon').simulate('click', {currentTarget: {value: testValue}});
+          renderedSubcomponent.find('.icon').simulate('click');
           expect(mockSetOrderOption).toBeCalledTimes(1);
           expect(mockSetOrderOption).toBeCalledWith({[mockProps.id]: testValue });
         });
@@ -192,7 +192,7 @@ for(let type in optionTypes){
         it('should run setOrderOption function on change', () => {
           renderedSubcomponent.find(DatePicker).simulate('change', testValue);
           expect(mockSetOrderOption).toBeCalledTimes(1);
-          expect(mockSetOrderOption).toBeCalledWith({ [mockProps.id]: testValue });
+          expect(mockSetOrderOption).toBeCalledWith({[mockProps.id]: testValue });
         });
         break;
       }
@@ -205,6 +205,13 @@ for(let type in optionTypes){
           const div = renderedSubcomponent.find('div');
           expect(div.find('.checkboxes').text()).toEqual(divClass);
           expect(div.find('input').prop('type')).toEqual(inputType);
+        });
+
+        it('contains div with class/input type checkbox', () => {
+          renderedSubcomponent.find('input').at(2).simulate('change', {checked: true});
+          expect(mockSetOrderOption).toBeCalledTimes(1);
+          expect(mockSetOrderOption).toBeCalledWith({[mockProps.id]: [mockProps.currentValue]});
+
         });
         break;
       }
