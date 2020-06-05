@@ -97,7 +97,7 @@ const checkDescriptionAfterTime = (time, delaySeconds, expectedDescription) => {
 describe('Component HappyHourAd with mocked Date and delay', () => {
   checkDescriptionAfterTime('11:57:58', 2, '120');
   checkDescriptionAfterTime('11:59:58', 1, '1');
-  checkDescriptionAfterTime('13:00:00', 60 * 60, 22 * 60 * 60 + '');
+  checkDescriptionAfterTime('13:00:00', 60 * 60, 22 * 60 * 60 + ''); // 3600 = > const countdownTime = this.getCountdownTime() / 3600;
 });
 
 describe('Component HappyHourAd with mocked Date and promoDescription', () => {
@@ -105,3 +105,9 @@ describe('Component HappyHourAd with mocked Date and promoDescription', () => {
   checkDescriptionAtTime('12:38:58', mockProps.promoDescription);
   checkDescriptionAtTime('12:59:59', mockProps.promoDescription);
 });
+
+describe('Component HappyHourAd with mocked Date and delay(t.2)', () => {
+  checkDescriptionAfterTime('11:56:50', 191, mockProps.promoDescription);
+  checkDescriptionAfterTime('11:59:58', 3, mockProps.promoDescription);
+//   checkDescriptionAfterTime("11:59:58", 1, 23 * 60 * 60 + "");   <==== ? S.U 2 ?
+}); 
