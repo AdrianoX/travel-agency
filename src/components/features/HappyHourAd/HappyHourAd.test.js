@@ -32,7 +32,7 @@ describe('Component HappyHourAd', () => {
   it('should render title/desc from mockProps', () => {
     const component = shallow(<HappyHourAd {...mockProps} />);             // 1A
     // const checkTitle = mockProps.title;                                    // 1A
-    // const checkPromoDescription = mockProps.promoDescription;              // 1A 
+    // const checkPromoDescription = mockProps.promoDescription;              // 1A
     // expect(component.find(select.title).text()).toEqual(checkTitle);                             //1A
     // expect(component.find(select.promoDescription).text()).toEqual(checkPromoDescription);        // 1A
 
@@ -42,10 +42,9 @@ describe('Component HappyHourAd', () => {
     // expect(component.find(select.promoDescription).text()).toEqual(mockProps.promoDescription);
   });
 
-}); 
- 
-const trueDate = Date;
+});
 
+const trueDate = Date;
 const mockDate = customDate => class extends Date {
   constructor(...args) {
     if(args.length){
@@ -82,7 +81,7 @@ const checkDescriptionAfterTime = (time, delaySeconds, expectedDescription) => {
   it(`should show correct value ${delaySeconds} seconds after ${time}`, () => {
     jest.useFakeTimers();
     global.Date = mockDate(`2019-05-14T${time}.135Z`);
-  
+
     const component = shallow(<HappyHourAd {...mockProps} />);
     const newTime = new Date();
     newTime.setSeconds(newTime.getSeconds() + delaySeconds);
@@ -91,7 +90,7 @@ const checkDescriptionAfterTime = (time, delaySeconds, expectedDescription) => {
     jest.advanceTimersByTime(delaySeconds * 1000);
     const renderedTime = component.find(select.promoDescription).text();
     expect(renderedTime).toEqual(expectedDescription);
-  
+
     global.Date = trueDate;
     jest.useRealTimers();
   });
@@ -113,4 +112,4 @@ describe('Component HappyHourAd with mocked Date and delay(t.2)', () => {
   checkDescriptionAfterTime('11:56:50', 191, mockProps.promoDescription);
   checkDescriptionAfterTime('11:59:58', 3, mockProps.promoDescription);
 //   checkDescriptionAfterTime("11:59:58", 1, 23 * 60 * 60 + "");   <==== ? S.U 2 ?
-}); 
+});

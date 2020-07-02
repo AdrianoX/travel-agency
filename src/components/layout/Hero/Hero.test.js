@@ -8,7 +8,7 @@ describe('Component Hero', () => {
     expect(component).toBeTruthy();
     // console.log(component.debug());
   });
-  
+
   it('should throw error without required props', () => {
     expect(() => shallow(<Hero />)).toThrow();
   });
@@ -17,7 +17,7 @@ describe('Component Hero', () => {
     const expectedTitle = 'Lorem ipsum';
     const expectedImage = 'image.jpg';
     const component = shallow(<Hero titleText={expectedTitle} imageSrc={expectedImage} />);
-  
+
     const renderedTitle = component.find('.title').text();
     expect(renderedTitle).toEqual(expectedTitle);
     expect(component.find('.image').prop('src')).toEqual(expectedImage);
@@ -38,5 +38,12 @@ describe('Component Hero', () => {
 
     expect(component.find('HappyHourAd').length).toEqual(1);
   });
+
+  // it('should render DaysToSummer', () => {
+  //   const expectedTitle = 'Lorem ipsum';
+  //   const expectedImage = 'image.jpg';
+  //   const component = shallow(<Hero titleText={expectedTitle} imageSrc={expectedImage} />);
+  //   expect(component.find('DaysToSummer').length).toEqual(1);
+  // });
 });
 
